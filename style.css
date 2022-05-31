@@ -36,9 +36,11 @@ header,
 }
 .notify__logo{
     background-image: url(./img/notify.svg);
-    width: 183px;
-    height: 83px;
-    margin-bottom: 20px;
+    width: 12.8vw;
+    height: 5.6vw;
+    margin-bottom: 1.39vw;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .notify__info{
     color: #FFFFFF;
@@ -46,20 +48,22 @@ header,
     font-weight: 400;
     font-size:24px ;
     line-height: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 1.39vw;
 }
 .notify__img-container{
     height: 50px;
-    width: 190px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+   gap: 1.3vw;
 }
+
 .notify__apple,
-.noyify__android,
+ .noyify__android, 
 .noyify__wind{
+    position: relative;
     border-radius: 360px;
-    height: 50px;
-    width: 50px;
+    height: 3.31vw;
+    width: 3.31vw;
  background-color: #000000;
  opacity: 0.6;
 }
@@ -70,13 +74,14 @@ header,
  background-color: #2ECC71;
  opacity:1;
 }
+
 .notify__apple-img,
-.noyify__android-img,
+.noyify__android-img, 
 .noyify__wind-img{
     background-repeat: no-repeat;
     background-size: contain; 
-    height: 28px;
-    width: 28px;
+    height: 1.851vw;
+    width: 1.851vw; 
     position: relative;
     opacity: 1;
 }
@@ -84,6 +89,7 @@ header,
 background-image: url(./img/apple.svg);
 left: 27%;
 top: 19%;
+    
 }
 .noyify__android-img{
     background-image: url(./img/android.svg);
@@ -97,16 +103,19 @@ top: 19%;
 }
 .notify__heand-img{
 background-image: url(./img/heand.svg);
-width: 439px;
-height: 507px;
+width: 30vw;
+height: 34vw;
 position: relative;
 display: flex;
 align-self: flex-end;
+background-repeat: no-repeat;
+background-size: contain; 
 }
 /* FIRST SECTION*/
-.firstSection{
-    padding-top: 3%;
-}
+    .firstSection{
+        height: 23vw;
+        padding-top: 3%;
+    }
 .firstSection-info{
     display: flex;
     justify-content: space-between; 
@@ -114,29 +123,31 @@ align-self: flex-end;
 .editableTheme,
 .flatDesign,
 .reachYourAudience{
-    height: 300px;
-    width: 322px;
+    height:21vw;
+    width: 22.4vw;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 .editableTheme-img-container,
-.flatDesign-img-container,
+.flatDesign-img-container,  
 .reachYourAudience-img-container{
-    height: 52px;
-    width: 52px;
+    height: 3.62vw;
+    width:3.62vw;
     background-color: #2ECC71;
     border-radius: 360px;
-    border: 34px solid #2ECC71;
-    margin-bottom: 20px;
+    border:2.36vw solid #2ECC71;
+    margin-bottom:1.39vw;
 }
+
 .editableTheme-img,
-.flatDesign-img,
+ .flatDesign-img, 
 .reachYourAudience-img{
     background-repeat: no-repeat;
     background-size: contain; 
-    height: 52px;
-    width: 52px;
+    height: 3.473vw;
+   
 }
 .editableTheme-img{
     background-image: url(./img/gear.svg);
@@ -156,7 +167,7 @@ font-size: 22px;
 font-weight: 700;
 line-height: 26px;
 text-align: center;
-margin-bottom: 20px;
+margin-bottom: 1.39vw;
 color: #111111;
 
 }
@@ -177,7 +188,7 @@ color: #696969;
 .secondSection{
     width: 100%;
     background-color: #DAE0E5;
-    height: 430px;
+    height: 29vw;
 }
 .getNotify{
   display: flex;
@@ -186,7 +197,7 @@ color: #696969;
 }
 .getNotify__info-container{
     height: 220px;
-    width: 497px;
+    width: 510px;
 }
 .getNotify__title{
     font-family: var(--mainFontFamily);
@@ -195,7 +206,7 @@ color: #696969;
     line-height: 26px;
     text-align: left;
     color: #111111;
-    margin-bottom: 20px;
+    margin-bottom: 1.39vw;
 }
 .getNotify__info{
     font-family: var(--mainFontFamily);
@@ -204,7 +215,7 @@ color: #696969;
     line-height: 26px;
     text-align: left;
     color: #696969;
-    margin-bottom: 20px;
+    margin-bottom: 1.39vw;
 }
   .input-container{
 display: flex;
@@ -225,7 +236,6 @@ color: #FFFFFF;
 font-family: var(--mainFontFamily);
 font-size: 22px;
 font-weight: 700;
-line-height: 26px;
 text-align: center;
 
   border: none;
@@ -247,7 +257,7 @@ text-align: center;
     padding-top: 5%;
     padding-right: 20%;
     padding-left:20% ;
-    height: 503px;
+    height: 450px;
     display: flex;
   align-items: center   ;
     flex-direction: column;
@@ -260,7 +270,8 @@ font-weight: 400;
 line-height: 30px;
 text-align: left;
 color: #696969;
-margin-bottom: 20px;
+margin-bottom: 1.39vw;
+text-align: center;
 }
 .billHunt-title{
     font-family: var(--mainFontFamily);
@@ -268,50 +279,48 @@ font-size: 18px;
 font-weight: 700;
 line-height: 26px;
 text-align: left;
-margin-bottom: 20px;    
+margin-bottom: 1.39vw;    
 }
 
 .billHunt__imgs-container{
     height: 60px;
-    width: 100%;
+    width:130%;
     display: flex; 
-    justify-content: space-around;
+     flex-wrap: wrap; 
+    justify-content: center;
+   gap: 5px;
     margin-bottom: 60px;
-}
-.billHunt__left-img-container:hover,
-.billHunt-img:hover,
-.billHunt__right-img:hover{
-background-color:  #2ECC7180 50%;
-
-
-}
-.billHunt__left-img-container{
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(./img/left__opacity.svg);
+} 
+.left_img_wrapper,
+.img_wrapper,
+.right_img_wrapper{
     height: 60px;
     width: 59px;
+background-color:  green;
+
+}
+
+.left_img_wrapper:hover,
+.img_wrapper:hover,
+.right_img_wrapper:hover{
+background-color:  #2ECC7180 50%;
+}
+
+.billHunt__left-img{
+    background: linear-gradient(270deg, #FFFFFF 0% 100%);
 }
 
 .billHunt__left-img,
 .billHunt-img,
 .billHunt__right-img{
-        background-repeat: no-repeat;
+     background-repeat: no-repeat;
     background-size: contain;       
 background-image: url(./img/bill.png);
-    height: 60px;
-    width: 59px;
+width: 100%;
+height: 100%; 
 }
-.billHunt-img{
-    display: flex; 
-}
-
-
-
-
-
 .getInTouch-title{
-    font-family: var(--mainFontFamily);
+font-family: var(--mainFontFamily);
 font-size: 24px;
 font-weight: 700;
 line-height: 26px;
@@ -325,15 +334,18 @@ font-weight: 400;
 line-height: 26px;
 text-align: left;
 color: #696969;
-margin-bottom: 20px;
+margin-bottom:  1.39vw;
+text-align: center;
 }
 
 
 .img-list{
     list-style: none;
-    width: 30%;
+    width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 4%;
+
 }
 
  
@@ -357,6 +369,7 @@ align-items: center;
 background-size: contain;
     height:25px;
     width: 25px;
+
 }
 
 .img-container:hover{
@@ -391,12 +404,6 @@ background-size: contain;
     width: 20px;
 }
 
-
-
-
-
-
-
 /*FOOTER*/
 footer{
     width: 100%;
@@ -417,11 +424,226 @@ text-decoration: none;
 .footer__list{
     width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 4%;
 
 }
 .footer__list-item{
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+}
+@media screen and (max-width: 1024px){
+   
+    .notify__info{
+        font-size:18px ;
+        line-height: 28px;
+    }
+    .editableTheme-title,
+    .flatDesign-title,
+    .reachYourAudience-title,
+    .getNotify__title,
+    .billHunt-title,
+    .getInTouch-title{
+        font-size: 20px;
+    line-height: 16px;
+    }
+    .editableTheme-info,
+.flatDesign-info,
+.reachYourAudience-info,
+.getNotify__info,
+.billHunt-info,
+.getInTouch-info{
+font-size: 14px;
+line-height: 22px;
+}
+.notify-button{
+font-size: 16px;
+line-height: 20px;
+}
+.billHunt__imgs-container{
+    height: 125px;
+    margin-bottom: 20px;
+}
+.footer__list{
+    width: 60%;
+
+}
+.getNotify__img{
+    height: 230px;
+    width: 370px;
+}
+.getNotify__info-container{
+    height: 220px;
+    width: 400px;
+}
+.thirdSection{
+    height: 400px;
+}
+}
+
+@media screen and (max-width: 768px){
+    .notify__info{
+        font-size:14px ;
+        line-height: 20px;
+    }
+    .editableTheme-title,
+    .flatDesign-title,
+    .reachYourAudience-title,
+    .getNotify__title,
+    .billHunt-title,
+    .getInTouch-title{
+        font-size: 18px;
+    line-height: 18px;
+    }
+    .editableTheme-info,
+.flatDesign-info,
+.reachYourAudience-info,
+.getNotify__info,
+.billHunt-info,
+.getInTouch-info{
+font-size: 12px;
+line-height: 20px;
+}
+.notify-button{
+    font-size: 13px;
+    }
+.firstSection{
+    height: 27vw;
+}
+.thirdSection{
+    height: 380px;
+}
+}
+@media screen and (max-width: 425px){
+    .notify__info{
+        font-size:12px ;
+        line-height: 20px;
+    }
+    .notify__info-container{
+        padding-bottom: 0;
+    }
+    .notify__img-container{
+        height: 20px;
+    }
+    .editableTheme-title,
+    .flatDesign-title,
+    .reachYourAudience-title,
+    .getNotify__title,
+    .billHunt-title,
+    .getInTouch-title{
+        font-size: 16px;
+    line-height: 16px;
+    }
+    .editableTheme-info,
+.flatDesign-info,
+.reachYourAudience-info,
+.getNotify__info,
+.billHunt-info,
+.getInTouch-info{
+font-size: 10px;
+line-height: 16px;
+}
+.firstSection{
+    height: 42vw;
+    padding-top: 3%;
+}
+.getNotify{
+ flex-direction: column;
+  }
+  .firstImgDel{
+    display: none;
+  }
+  .secondSection{
+    height:90vw;
+}
+.getNotify__info-container{
+    height: 120px;
+    width: 330px;
+}
+.email,
+.notify-button{
+    font-size: 8px;
+    height: 5vw;
+}
+.email{
+    width: 20vw;
+}
+.notify-button{
+    width: 12vw;
+    
+}
+.getNotify__img{ 
+    height: 210px;
+    width: 330px;
+ 
+}
+.getNotify__info-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.getNotify__info{
+    text-align: center;
+}
+.left_img_wrapper,
+.img_wrapper,
+.right_img_wrapper,
+.billHunt__left-img,
+.billHunt-img,
+.billHunt__right-img{
+    height: 50px;
+    width: 49px;
+}
+
+
+
+.footer__list-item{
+    font-size: 12px;
+    line-height: 20px;
+}
+.footer__list{
+    width: 100%;
+    gap: 6%;
+}
+footer{
+height: 60px;
+}
+
+
+.img-container{
+    height: 25px;
+    width: 25px;
+    }
+    
+    .twitter-img,
+    .youTube-img,
+    .facebook-img,
+    .google-img,
+    .pinterest-img,
+    .linkedin-img{
+        height:15px;
+        width: 15px;
+    }
+    
+
+    .twitter-img{
+        height:12px;
+    }
+    .youTube-img{
+        height:11px;
+    }
+    .facebook-img{
+        width: 9px;
+    }
+    .google-img{
+        height:10px;
+    }
+    .pinterest-img{
+        width: 10px;
+    }
+    .linkedin-img{
+        height:10px;
+        width: 10px;
+    } 
 }
