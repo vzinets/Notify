@@ -284,9 +284,7 @@ header,
   gap: 5px;
   margin-bottom: 60px;
 }
-.left_img_wrapper,
-.img_wrapper,
-.right_img_wrapper {
+.img_wrapper{
   height: 60px;
   width: 59px;
   background-color: green;
@@ -299,23 +297,27 @@ header,
 .billHunt__imgs-container {
   position: relative;
 }
-.billHunt__imgs-container::before {
+.billHunt__imgs-container::before,
+.billHunt__imgs-container::after{
   content: '';
   position: absolute;
-  left: 50px;
-  top: 0;
   background: linear-gradient(270deg, #f6f3f3 0%, rgba(255, 255, 255, 0) 100%);
-  transform: matrix(-1, 0, 0, 1, 0, 0);
   width: 59px;
   height: 60px;
 }
-.billHunt__left-img {
-  background: linear-gradient(270deg, #ffffff 0% 100%);
+.billHunt__imgs-container::after{
+ right:1.38vw;
+  top: 0;
+}
+.billHunt__imgs-container::before {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  left: 1.4vw;
+  top: 0;
 }
 
-.billHunt__left-img,
-.billHunt-img,
-.billHunt__right-img {
+
+
+.billHunt-img{
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(./img/bill.png);
@@ -476,6 +478,10 @@ footer {
   .thirdSection {
     height: 400px;
   }
+  .billHunt__imgs-container::after{
+    right:23.38vw;
+     top: 65px;
+   }
 }
 
 @media screen and (max-width: 768px) {
@@ -510,6 +516,9 @@ footer {
   .thirdSection {
     height: 380px;
   }
+  .billHunt__imgs-container::after{
+    right:5.4vw;
+   }
 }
 @media screen and (max-width: 425px) {
   .notify__info {
@@ -580,12 +589,8 @@ footer {
   .getNotify__info {
     text-align: center;
   }
-  .left_img_wrapper,
   .img_wrapper,
-  .right_img_wrapper,
-  .billHunt__left-img,
-  .billHunt-img,
-  .billHunt__right-img {
+  .billHunt-img{
     height: 50px;
     width: 49px;
   }
@@ -636,8 +641,6 @@ footer {
     height: 10px;
     width: 10px;
   }
-}
-@media screen and (max-width: 425px) {
   .firstSection {
     height: 50vw;
   }
@@ -651,5 +654,48 @@ footer {
   .getNotify__info-container {
     height: 130px;
     width: 300px;
+  }
+  .billHunt__imgs-container::before,
+.billHunt__imgs-container::after{
+  height: 50px;
+  width: 49px;
+}
+  .billHunt__imgs-container::after{
+    right:17.42vw;
+   }
+   .billHunt__imgs-container::before {
+    left: 3.4vw;
+  }
+}
+@media screen and (max-width: 320px) {
+ .firstSection {
+    height: 60vw;
+  }
+  .thirdSection {
+    height: 360px;
+  }
+  .getNotify__img {
+    height: 190px;
+    width: 300px;
+  }
+  .getNotify__info-container {
+    height: 150px;
+    width: 260px;
+  } 
+  .getNotify__img {
+  position: relative;
+  left: 30px;
+    height: 120px;
+    width: 190px;
+
+  }
+  .getNotify__info {
+width: 250px;
+  }
+  .billHunt__imgs-container::after{
+    right:6vw;
+   }
+   .billHunt__imgs-container::before {
+    left: 5.6vw;
   }
 }
