@@ -215,6 +215,7 @@ header,
 .input-container {
   display: flex;
   justify-content: start;
+  
 }
 .email {
   height: 2.3vw;
